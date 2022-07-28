@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    flex-direction:row-reverse;
+    background-color:#dc143c;
+}
+
+.row > div {
+    background-color:#00ff7f;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    background-color: #6a5acd;
+}
+.column > div {
+    color: #ffffff;
+    background-color: #00008b;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+}

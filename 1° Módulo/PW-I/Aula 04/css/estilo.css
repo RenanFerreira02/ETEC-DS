@@ -1,0 +1,29 @@
+h1 {
+    color: #0ffb30;
+}
+
+body {
+    background-color: #032b50;
+  }  
+
+.pokemon {
+  width: 500px;
+  cursor: pointer;
+}
+
+.paragrafo {
+  font-size: 18px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+.listaNaoOrdenada {
+  border: 2px solid #fff000;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.listaOrdenada{
+    border: 2px dashed #ff4500;
+    color: #ffffff;
+}

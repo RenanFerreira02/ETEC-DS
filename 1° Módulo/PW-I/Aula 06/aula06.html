@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style/estilo.css" />
+  </head>
+
+  <body>
+    <div class="centralizando">
+      <h2>Meu primeiro Javascript</h2>
+    </div>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()"
+    >
+      Aperte aqui para mostrar a data e hora.
+    </button>
+
+    <p id="demo"></p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('meuSpan').innerHTML = 'Eu sou Lindo'"
+    >
+      Botão 2
+    </button>
+
+    <br />
+
+    <span id="meuSpan"></span>
+
+    <br />
+
+    <button type="button" onclick="window.alert('Aprendi na aula de PW')">
+      Aperte para receber uma mensagem
+    </button>
+  </body>
+</html>

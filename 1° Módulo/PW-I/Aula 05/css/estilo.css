@@ -1,0 +1,23 @@
+/* link que não foi visitado */
+a:link {
+    color: rgb(19, 8, 230);
+  }
+  
+  /* link que foi visitado */
+  a:visited {
+    color: rgb(255, 2, 192);
+  }
+  
+  /* link que o mouse passa por cima */
+  a:hover {
+    color: rgb(2, 238, 255);
+  }
+  
+  /* link que foi selecionado */
+  a:active {
+    color: rgb(255, 252, 55);
+  }
+
+  img {
+      width: 300px;
+  }

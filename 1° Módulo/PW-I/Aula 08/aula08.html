@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radio e Checkbox</title>
+    <link rel="stylesheet" href="./style/estilo.css" />
+  </head>
+
+  <body>
+    <div id="titulo">
+      <h2>Pesquisa</h2>
+    </div>
+    <p class="pergunta_pesquisa">
+      Marque a(s) sua matéria favorita do curso de Desenvolvimento de Sistemas:
+    </p>
+    <form>
+      <input
+        type="checkbox"
+        id="pw"
+        name="materia_favorita"
+        value="Programação Web"
+      />
+      <label for="pw">Programação Web</label><br />
+
+      <input
+        type="checkbox"
+        id="pa"
+        name="materia_favorita"
+        value="Programação e Algoritmos"
+      />
+      <label for="pa">Programação e Algoritmos</label><br />
+
+      <input
+        type="checkbox"
+        id="bd"
+        name="materia_favorita"
+        value="Banco de Dados"
+      />
+      <label for="bd">Banco de dados</label><br />
+
+      <input
+        type="checkbox"
+        id="osa"
+        name="materia_favorita"
+        value="Operação de Software e Aplicativos"
+      />
+      <label for="osa">Operação de Software e Aplicativos</label><br />
+
+      <input
+        type="checkbox"
+        id="dd"
+        name="materia_favorita"
+        value="Design Digital"
+      />
+      <label for="dd">Design Digital</label><br />
+
+      <input
+        type="checkbox"
+        id="fi"
+        name="materia_favorita"
+        value="Fundamentos da Informática"
+      />
+      <label for="fi">Fundamentos da Informática</label><br /><br />
+    </form>
+
+    <p class="pergunta_pesquisa">Marque a opção que você mais se identifica:</p>
+    <form>
+      <input type="radio" id="front" name="tipos_dev" value="Front-End" />
+      <label for="front">Front-End</label><br />
+
+      <input type="radio" id="back" name="tipos_dev" value="Back-End" />
+      <label for="back">Back-End</label><br />
+
+      <input type="radio" id="stack" name="tipos_dev" value="Full-Stack" />
+      <label for="stack">Full-Stack</label><br /><br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

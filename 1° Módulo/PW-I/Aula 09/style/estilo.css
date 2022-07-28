@@ -1,0 +1,19 @@
+.div1 {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.div2 {
+    border: 5px dotted lightgreen;
+    background-color: orangered;
+    text-align: right;
+    width: 30%;
+}
+
+.div2>.div3 {
+    border: 5px dotted purple;
+    background-color: lightcoral;
+    text-align: left;
+    width: 30%;
+}
