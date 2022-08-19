@@ -1,0 +1,11 @@
+body{
+    background: rgb(66, 3, 126);
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 2px solid black;
+}
+
+.titulo{
+    color:aqua; 
+}
