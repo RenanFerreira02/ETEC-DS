@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+    background-color: #4bb3f0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+nav {
+    background-color: rgb(45, 133, 168);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    margin: 30px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 25px rgb(105, 104, 104);
+}
+
+nav ul li a:hover {
+    color: aliceblue;
+    background-color: rgb(5, 32, 88);
+    box-shadow: 0 0 10px rgb(54, 54, 54);
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    color: #FFFFFF;
+}
+
+section div {
+    background-color: #e6f3ff;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+section div p {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 1.3rem;
+    text-indent: 1.5em;
+}
+
+footer {
+    background-color: rgb(2, 59, 82);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}

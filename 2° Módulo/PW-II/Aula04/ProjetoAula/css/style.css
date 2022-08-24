@@ -1,0 +1,19 @@
+body{
+    background: #1e9bac;
+}
+
+.tx{
+    border: 1px;
+    height: 28px;
+    padding-left: 5px;
+    color: #3d3de5;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.bt{
+    color: #fff;
+    background: #1d841d;
+    border: none;
+    padding: 6px 20px;
+}
