@@ -1,0 +1,16 @@
+/* Exercício 3 */
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tbody > .tr_ex03:nth-child(odd) {
+  background-color: #0000ff;
+}
+
+tbody > .tr_ex03:nth-child(even) {
+  background-color: #ff0000;
+}
