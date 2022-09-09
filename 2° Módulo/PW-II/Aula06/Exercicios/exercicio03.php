@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Exercício 3</title>
-
-
 </head>
 
 <body>
@@ -50,8 +48,8 @@
             for ($i = 0; $i < count($produtos); $i++) {
 
                 echo "<tr class='tr_ex03'>
-                            <td>$produtos[$i]</td>
-                            <td>$valores[$i]</td>
+                        <td>$produtos[$i]</td>
+                        <td>$valores[$i]</td>
                       </tr>";
             }
             ?>
