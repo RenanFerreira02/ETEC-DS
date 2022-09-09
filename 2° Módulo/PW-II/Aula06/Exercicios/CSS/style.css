@@ -3,14 +3,14 @@
 table,
 th,
 td {
-  border: 1px solid black;
-  border-collapse: collapse;
+	border: 1px solid black;
+	border-collapse: collapse;
 }
 
 tbody > .tr_ex03:nth-child(odd) {
-  background-color: #0000ff;
+	background-color: #4169e1;
 }
 
 tbody > .tr_ex03:nth-child(even) {
-  background-color: #ff0000;
+	background-color: #b22222;
 }

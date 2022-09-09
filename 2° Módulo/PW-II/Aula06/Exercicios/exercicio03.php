@@ -35,8 +35,8 @@
             // for ($produto = 1, $valor = 1; $produto <= 10 && $valor <= 10; $produto++, $valor++) {
 
             //     echo "<tr class='tr_ex03'>
-            //             <td>$produto</td>
-            //             <td>$valor</td>
+            //                 <td>$produto</td>
+            //                 <td>$valor</td>
             //           </tr>";
             // }
 
@@ -50,9 +50,9 @@
             for ($i = 0; $i < count($produtos); $i++) {
 
                 echo "<tr class='tr_ex03'>
-                        <td>$produtos[$i]</td>
-                        <td>$valores[$i]</td>
-                 </tr>";
+                            <td>$produtos[$i]</td>
+                            <td>$valores[$i]</td>
+                      </tr>";
             }
             ?>
 
