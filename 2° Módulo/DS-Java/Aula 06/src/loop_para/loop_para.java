@@ -13,11 +13,11 @@ public class loop_para {
 
             if (i % 2 == 0) {
                 System.out.println(i + " Par");
-                soma_par = soma_par = soma_par + i;
+                soma_par = soma_par + i;
 
             } else {
                 System.out.println(i + " Ímpar");
-                soma_impar = soma_impar = soma_impar + i;
+                soma_impar = soma_impar + i;
             }
 
         }

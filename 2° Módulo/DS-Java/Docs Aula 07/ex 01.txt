@@ -1,0 +1,2 @@
+faça um algoritomo em java utilizando a estrutura enquanto (while) de 1 a 100
+separe os numeros pares dos impares 
