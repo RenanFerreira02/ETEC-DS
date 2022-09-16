@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body {
+    background-image: linear-gradient(169deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+section {
+    margin-top: 50px;
+}
+
+section h2,
+p {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-family: 'Open Sans';
+    color: rgb(0, 0, 0);
+}
+
+table {
+    max-width: 75%;
+    margin: 50px auto;
+    align-items: center;
+    background-color: rgb(240, 248, 255);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+thead {
+    height: 70px;
+    background-image: linear-gradient(180deg, #0f5483 0%, #1c2185 100%);
+    color: rgb(240, 248, 255);
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+table,
+th,
+td {
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+th,
+td {
+    width: 300px;
+    height: 65px;
+    padding: 0 20px;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+tr.impar {
+    background-image: linear-gradient(180deg, #81ecda 0%, #7bcbfa 100%);
+    background-color: rgb(185, 223, 253);
+}
+
+tr.par {
+    background-image: linear-gradient(180deg, #fd9292 0%, #fc5757 100%);
+    background-color: rgb(255, 184, 184);
+}
