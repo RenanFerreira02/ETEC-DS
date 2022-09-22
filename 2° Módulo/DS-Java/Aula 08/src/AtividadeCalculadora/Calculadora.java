@@ -1,28 +1,20 @@
-package Form;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
+package AtividadeCalculadora;
 
-public class FormCalc extends javax.swing.JFrame {
+/**
+ *
+ * @author CAMARGO
+ */
+public class Calculadora extends javax.swing.JFrame {
 
     /**
-     * Creates new form FormCalc
+     * Creates new form Calculadora
      */
-    public FormCalc() {
+    public Calculadora() {
         initComponents();
-        desabilitar();
-        habilitar();
-    }
-
-    void desabilitar() {
-        text_n1.setEditable(false);
-        text_n2.setEditable(false);
-        text_res.setEditable(false);
-
-    }
-
-    void habilitar() {
-        text_n1.setEditable(true);
-        text_n2.setEditable(true);
-        text_res.setEditable(true);
-
     }
 
     /**
@@ -37,18 +29,18 @@ public class FormCalc extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        text_n2 = new javax.swing.JTextField();
         text_n1 = new javax.swing.JTextField();
+        text_n2 = new javax.swing.JTextField();
         text_res = new javax.swing.JTextField();
         btn_Soma = new javax.swing.JButton();
         btn_Sub = new javax.swing.JButton();
-        btn_Mult = new javax.swing.JButton();
+        btn_Multi = new javax.swing.JButton();
         btn_Div = new javax.swing.JButton();
-        btn_Return = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btn_Retornar = new javax.swing.JButton();
+        btn_Novo = new javax.swing.JButton();
         btn_Limpar = new javax.swing.JButton();
         btn_Sair = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btn_Comp = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,19 +49,6 @@ public class FormCalc extends javax.swing.JFrame {
         jLabel2.setText("N2");
 
         jLabel3.setText("Resultado");
-
-        text_n2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                text_n2ActionPerformed(evt);
-            }
-        });
-
-        text_res.setEditable(false);
-        text_res.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                text_resActionPerformed(evt);
-            }
-        });
 
         btn_Soma.setText("+");
         btn_Soma.addActionListener(new java.awt.event.ActionListener() {
@@ -85,10 +64,10 @@ public class FormCalc extends javax.swing.JFrame {
             }
         });
 
-        btn_Mult.setText("*");
-        btn_Mult.addActionListener(new java.awt.event.ActionListener() {
+        btn_Multi.setText("*");
+        btn_Multi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_MultActionPerformed(evt);
+                btn_MultiActionPerformed(evt);
             }
         });
 
@@ -99,12 +78,17 @@ public class FormCalc extends javax.swing.JFrame {
             }
         });
 
-        btn_Return.setText("Retornar");
-
-        jButton6.setText("Novo");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btn_Retornar.setText("Retornar");
+        btn_Retornar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btn_RetornarActionPerformed(evt);
+            }
+        });
+
+        btn_Novo.setText("Novo");
+        btn_Novo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_NovoActionPerformed(evt);
             }
         });
 
@@ -122,7 +106,12 @@ public class FormCalc extends javax.swing.JFrame {
             }
         });
 
-        jButton9.setText("Comparação");
+        btn_Comp.setText("Comparação");
+        btn_Comp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_CompActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,168 +120,171 @@ public class FormCalc extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(btn_Soma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_Sub, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_Mult, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btn_Div, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
-                        .addComponent(btn_Return)
-                        .addGap(77, 77, 77))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(19, 19, 19)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(jLabel1)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(text_n2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(text_n1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(text_res, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(119, 119, 119))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton6)
-                .addGap(18, 18, 18)
-                .addComponent(btn_Limpar)
-                .addGap(18, 18, 18)
-                .addComponent(btn_Sair)
-                .addGap(18, 18, 18)
-                .addComponent(jButton9)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(text_n1, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
+                            .addComponent(text_n2)
+                            .addComponent(text_res)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btn_Soma)
+                                .addGap(7, 7, 7)
+                                .addComponent(btn_Sub)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_Multi)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_Div))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                                    .addComponent(btn_Novo)
+                                    .addComponent(btn_Sair))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btn_Limpar)
+                                .addComponent(btn_Comp))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addComponent(btn_Retornar)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(text_n1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(14, 14, 14)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel2)
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(text_n1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(text_n2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(text_res, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(text_n2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(text_res, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(59, 59, 59)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_Soma)
                     .addComponent(btn_Sub)
-                    .addComponent(btn_Mult)
+                    .addComponent(btn_Multi)
                     .addComponent(btn_Div)
-                    .addComponent(btn_Return))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                    .addComponent(btn_Retornar))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
-                    .addComponent(btn_Limpar)
+                    .addComponent(btn_Novo)
+                    .addComponent(btn_Limpar))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_Sair)
-                    .addComponent(jButton9))
-                .addGap(32, 32, 32))
+                    .addComponent(btn_Comp))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-
-    private void text_n2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text_n2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_text_n2ActionPerformed
-
-    private void btn_MultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultActionPerformed
-        // TODO add your handling code here:
-        int x, y, z; // Variáveis de apoio
-
-        String r; // R é String para receber valor
-
-        x = Integer.parseInt(text_n1.getText()); //Mesclando o Campo com a variável
-
-        y = Integer.parseInt(text_n2.getText());
-
-        z = x * y;//operação 
-
-        r = String.valueOf(z); // passando a variável para String para que o campo de texto seja aceito 
-
-        text_res.setText(r); // Campo de resposta recebendo valor
-    }//GEN-LAST:event_btn_MultActionPerformed
-
-    private void text_resActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text_resActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_text_resActionPerformed
-
     private void btn_SomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SomaActionPerformed
         // TODO add your handling code here:
         int x, y, z; // Variáveis de apoio
 
-        String r; // R é String para receber valor
+        String r; // R string para receber valor
 
         x = Integer.parseInt(text_n1.getText()); //Mesclando o Campo com a variável
 
         y = Integer.parseInt(text_n2.getText());
 
-        z = x + y;//operação 
+        z = x + y;//operação
 
         r = String.valueOf(z); // passando a variável para String para que o campo de texto seja aceito 
 
-        text_res.setText(r); // Campo de resposta recebendo valor
-
+        text_res.setText(r);// Camppo de resposta recebendo valor
     }//GEN-LAST:event_btn_SomaActionPerformed
 
     private void btn_SubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SubActionPerformed
         // TODO add your handling code here:
         int x, y, z; // Variáveis de apoio
 
-        String r; // R é String para receber valor
+        String r; // R string para receber valor
 
         x = Integer.parseInt(text_n1.getText()); //Mesclando o Campo com a variável
 
         y = Integer.parseInt(text_n2.getText());
 
-        z = x - y;//operação 
+        z = x - y;//operação
 
         r = String.valueOf(z); // passando a variável para String para que o campo de texto seja aceito 
 
-        text_res.setText(r); // Campo de resposta recebendo valor
+        text_res.setText(r);// Camppo de resposta recebendo valor
     }//GEN-LAST:event_btn_SubActionPerformed
+
+    private void btn_MultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MultiActionPerformed
+        // TODO add your handling code here:
+        int x, y, z; // Variáveis de apoio
+
+        String r; // R string para receber valor
+
+        x = Integer.parseInt(text_n1.getText()); //Mesclando o Campo com a variável
+
+        y = Integer.parseInt(text_n2.getText());
+
+        z = x * y;//operação
+
+        r = String.valueOf(z); // passando a variável para String para que o campo de texto seja aceito 
+
+        text_res.setText(r);// Camppo de resposta recebendo valor
+    }//GEN-LAST:event_btn_MultiActionPerformed
 
     private void btn_DivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_DivActionPerformed
         // TODO add your handling code here:
         int x, y, z; // Variáveis de apoio
 
-        String r; // R é String para receber valor
+        String r; // R string para receber valor
 
         x = Integer.parseInt(text_n1.getText()); //Mesclando o Campo com a variável
 
         y = Integer.parseInt(text_n2.getText());
 
-        z = x / y;//operação 
+        z = x / y;//operação
 
         r = String.valueOf(z); // passando a variável para String para que o campo de texto seja aceito 
 
-        text_res.setText(r); // Campo de resposta recebendo valor
+        text_res.setText(r);// Camppo de resposta recebendo valor
     }//GEN-LAST:event_btn_DivActionPerformed
 
-    private void btn_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SairActionPerformed
+    private void btn_RetornarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_RetornarActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_btn_SairActionPerformed
+    }//GEN-LAST:event_btn_RetornarActionPerformed
+
+    private void btn_NovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_NovoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_NovoActionPerformed
 
     private void btn_LimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LimparActionPerformed
         // TODO add your handling code here:
         text_n1.setText("");
         text_n2.setText("");
         text_res.setText("");
+
     }//GEN-LAST:event_btn_LimparActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btn_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SairActionPerformed
         // TODO add your handling code here:
-        habilitar();
-    }//GEN-LAST:event_jButton6ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btn_SairActionPerformed
+
+    private void btn_CompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CompActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_CompActionPerformed
 
     /**
      * @param args the command line arguments
@@ -311,34 +303,34 @@ public class FormCalc extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FormCalc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FormCalc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FormCalc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FormCalc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FormCalc().setVisible(true);
+                new Calculadora().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_Comp;
     private javax.swing.JButton btn_Div;
     private javax.swing.JButton btn_Limpar;
-    private javax.swing.JButton btn_Mult;
-    private javax.swing.JButton btn_Return;
+    private javax.swing.JButton btn_Multi;
+    private javax.swing.JButton btn_Novo;
+    private javax.swing.JButton btn_Retornar;
     private javax.swing.JButton btn_Sair;
     private javax.swing.JButton btn_Soma;
     private javax.swing.JButton btn_Sub;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
