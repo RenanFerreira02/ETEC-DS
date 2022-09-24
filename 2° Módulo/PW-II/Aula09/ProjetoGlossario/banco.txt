@@ -1,0 +1,14 @@
+http://localhost/phpmyadmin
+
+nome do banco: dbGlossario
+
+create table tbPalavra(
+    idPalavra int primary key AUTO_INCREMENT,
+    palavra varchar(40),
+    descricao varchar(500),
+    imagem varchar(100),
+    link varchar(100)   
+);
+
+insert into tbpalavra values(null,'USB','descr USB','caminho img','link img');
+insert into tbpalavra values(null,'Monitor','descr monitor','caminho img','link img');
