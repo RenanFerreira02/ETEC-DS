@@ -1,0 +1,13 @@
+https://www.alura.com.br/artigos/framework-o-que-e-pra-que-serve-essa-ferramenta?gclid=EAIaIQobChMIlP2Tnb6J_QIVEEeRCh3YFQa8EAAYASAAEgKQy_D_BwE
+https://rockcontent.com/br/blog/framework/#:~:text=O%20framework%20%C3%A9%20um%20pacote,qualidade%20no%20projeto%20e%20produtividade.
+https://getcomposer.org/download/
+https://www.treinaweb.com.br/blog/o-que-e-gerenciador-de-dependencias
+
+Comando para criar um projeto (utilizar no cmd)
+composer create-project laravel/laravel aula1 --prefer-dist
+
+
+
+
+
+
