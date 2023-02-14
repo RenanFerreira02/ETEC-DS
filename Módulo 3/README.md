@@ -1,2 +1,1 @@
-# ETEC-DS
-Repositório geral do curso de Desenvolvimento de Sistemas na ETEC realizado entre 2022 e 2023.
+Repositório das aulas de Programação para Aplicativos Mobile mestradas pelo professor João Siles e Juarez Brandão na ETEC Camargo Aranha
