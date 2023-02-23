@@ -7,11 +7,21 @@
 		<link rel="stylesheet" href="{{url('css/style.css')}}" />
 		<title>Definição de Framework</title>
 	</head>
+
+	<nav>
+		<ul class="nav">
+			<li><a href="/">Home</a></li>
+			<li><a href="contato">Contato</a></li>
+			<li><a href="quem-somos">Sobre nós</a></li>
+			<li><a href="tutorial">Criando um projeto</a></li>
+		</ul>
+	</nav>
+
 	<body>
 		<section class="introducao">
-			<h1>Framework</h1>
+			<h1 class="tittle-framework">Framework</h1>
 
-			<p>
+			<p class="paragrafo">
 				Um framework é uma estrutura que serve de base para a construção de aplicações web de
 				finalidade específica cujo desenvolvimento pode ser muito custoso e/ou problemático. Com um
 				framework é possível construir sites, aplicativos e softwares a partir de um esqueleto
@@ -19,33 +29,33 @@
 				back-end.
 			</p>
 
-			<img src="{{url('images/frameworks.png')}}" alt="" width="500" />
+			<img src="{{url('images/frameworks.png')}}" alt="" width="500" class="imagem" />
 		</section>
 
 		<section class="funcao-framework">
-			<h3>Para que serve?</h3>
+			<h3 class="subtittle">Para que serve?</h3>
 
-			<p>
+			<p class="paragrafo">
 				Um framework serve para auxiliar o programador ou programadora na hora de construir uma
 				aplicação web que já foi amplamente utilizada por outros especialistas.
 			</p>
 
-			<p>
+			<p class="paragrafo">
 				Por exemplo, na hora de desenvolver um site de vendas, ou um e-commerce, o que seria mais
 				vantajoso:
 			</p>
 
-			<ul>
-				<li>construir todo o site do zero, inclusive toda sua estrutura logística, ou</li>
+			<ul class="list">
+				<li>Construir todo o site do zero, inclusive toda sua estrutura logística, ou</li>
 
 				<li>
-					fazer uso de um framework para lojas virtuais que já vem com todo suporte de
+					Fazer uso de um framework para lojas virtuais que já vem com todo suporte de
 					funcionalidades e comandos previamente desenvolvido, faltando as especificações técnicas
 					relativas à loja que o utilizará?
 				</li>
 			</ul>
 
-			<p>
+			<p class="paragrafo">
 				A opção 2 é a que traz mais benefícios, não é mesmo? Pois bem, é para isso que serve um
 				framework: para que uma aplicação possa ser desenvolvida de maneira mais ágil, rápida e sem
 				obstáculos relacionados a problemas que já foram resolvidos por outros profissionais.
@@ -53,16 +63,16 @@
 		</section>
 
 		<section class="vantagens-desvantagens">
-			<h3>Vantagens</h3>
+			<h3 class="subtittle">Vantagens</h3>
 
-			<p>
+			<p class="paragrafo">
 				As vantagens de utilizar um framework são inúmeras, desde uma maior otimização de tempo até
 				o impacto positivo em todos os setores de uma companhia, uma vez que o tempo dos
 				profissionais gastos em códigos reescritos pode ser voltado à inovação, aqui vai uma lista
 				de algumas vantagens.
 			</p>
 
-			<ul>
+			<ul class="list">
 				<li>
 					Aumento da produtividade: Um tempo que deixa de ser gasto desnecessariamente dá a um
 					profissional a chance de aplicá-lo a algo que pode estar necessitando de uma maior
@@ -91,19 +101,19 @@
 				</li>
 			</ul>
 
-			<p>
+			<p class="paragrafo">
 				Sob o ponto de vista comercial, esta é uma grande vantagem competitiva: enquanto seu
 				concorrente é capaz de entregar 2 projetos ao ano, você será capaz de entregar 4.
 			</p>
 
-			<h3>Desvantagens</h3>
+			<h3 class="subtittle">Desvantagens</h3>
 
-			<p>
+			<p class="paragrafo">
 				Como em tecnologia da informação nem tudo são flores, os frameworks também possuem algumas
 				desvantagens técnicas, que são:
 			</p>
 
-			<ul>
+			<ul class="list">
 				<li>
 					Causa dependência: Os frameworks devem ser utilizados por profissionais experientes que já
 					possuam um razoável grau de familiaridade tanto com a aplicação desenvolvida quanto com a

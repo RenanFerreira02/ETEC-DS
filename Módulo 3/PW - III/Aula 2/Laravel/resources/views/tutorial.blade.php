@@ -8,10 +8,19 @@
 		<title>Criando um projeto com Laravel</title>
 	</head>
 
+	<nav>
+		<ul class="nav">
+			<li><a href="/">Home</a></li>
+			<li><a href="contato">Contato</a></li>
+			<li><a href="quem-somos">Sobre nós</a></li>
+			<li><a href="framework">Sobre Frameworks</a></li>
+		</ul>
+	</nav>
+
 	<body>
 		<h1>Tutorial</h1>
 
-		<ol>
+		<ol class="ordered-list">
 			<li>Abra o CMD</li>
 
 			<li>Utilize o comando <code>cd/</code> para retornar a pasta raiz do seu computador</li>

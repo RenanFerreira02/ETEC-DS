@@ -1,5 +1,10 @@
+/* Style Geral */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
 	margin: 0;
+	font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -9,4 +14,53 @@ body {
 
 h1 {
 	margin: 30px 15px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav > li {
+	list-style: none;
+	padding: 10px;
+}
+
+.nav > li > a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Style Framework */
+
+.tittle-framework {
+	display: flex;
+	justify-content: center;
+	font-size: 45px;
+}
+
+.paragrafo {
+	margin-left: 40px;
+}
+
+.imagem {
+	margin: 100px 0 100px 150px;
+}
+
+.subtittle {
+	margin: 15px 0 15px 30px;
+}
+
+.list {
+	margin-left: 30px;
+}
+
+.list > li {
+	margin: 20px 0 20px 0;
+}
+
+/* Style Tutorial */
+
+.ordered-list > li {
+	margin: 20px 0 20px 0;
 }
