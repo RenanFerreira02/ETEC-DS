@@ -4,15 +4,36 @@ USE dbpw3;
 
 CREATE TABLE tbLab (
 	idLab INT PRIMARY KEY AUTO_INCREMENT,
-    Lab varchar(250)
+    Lab VARCHAR(250)
 );
+
+INSERT INTO tbLab VALUES (null, "Lab01");
+
+INSERT INTO tbLab VALUES (null, "Lab02");
+
+INSERT INTO tbLab VALUES (null, "Lab03");
+
+INSERT INTO tbLab VALUES (null, "Lab04");
 
 CREATE TABLE tbReclamacao (
     idRec INT PRIMARY KEY AUTO_INCREMENT,
 	idLab INT,
-    pc varchar(250),
-    titulo varchar(250),
-    descricao varchar(250),
-    dtCriacao varchar(250),
+    PC VARCHAR(250),
+    Titulo VARCHAR(250),
+    Descricao VARCHAR(250),
+    dtCriacao DATE,
     FOREIGN KEY (idLab) REFERENCES tblab(idLab)
 );
+
+INSERT INTO tbReclamacao VALUES (null, 1, 01, 'RJ45 quebrado', 'A ponta do RJ45 do PC 01 do Lab 1 está quebrada, precisa refazer a ponta', '2023-03-09');
+
+INSERT INTO tbReclamacao VALUES (null, 8, 04, 'Monitor quebrado', 'O monitor do PC 4 está com a tela rachada, necessita de troca', '2023-02-03');
+
+CREATE TABLE tbContato (
+	idContato INT PRIMARY KEY AUTO_INCREMENT,
+    Nome varchar(250),
+    Tel VARCHAR(250),
+    Email VARCHAR(250)
+);
+
+INSERT INTO tbContato VALUES (null, 'Renan Ferreira', '11932441268', 'renankferreira01@gmail.com');
