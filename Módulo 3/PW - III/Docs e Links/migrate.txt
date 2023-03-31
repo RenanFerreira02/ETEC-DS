@@ -1,0 +1,36 @@
+drop table migrations;
+drop table users;
+drop table password_resets;
+
+
+Mudar o arquivo App\Providers\AppServiceProvider
+
+Aacrescentar:
+
+use Illuminate\Support\Facades\Schema;
+
+public function boot()
+    {        
+        Schema::defaultStringLength(191);
+    }
+
+
+//para criar uma nova migrations:
+No prompt executar:
+php artisan make:migration criar_tabela_alunos --create=aluno
+php artisan make:migration criar_tabela_laboratorio --create=tbLaboratorio
+
+
+php artisan make:migration criar_tabela_reclamacao --create=tbReclamacao
+
+
+executar a migration
+
+php artisan migrate
+
+Colunas
+
+$table->increments('id');
+            $table->string('nome');
+            $table->string('cpf');
+            $table->timestamps();
