@@ -1,0 +1,44 @@
+.form-container {
+	width: 410px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.form-container input[type='text'],
+.form-container textarea {
+	width: 100%;
+	padding: 8px 0;
+	margin-bottom: 10px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #333;
+	background-color: #f2f2f2;
+	transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.form-container input[type='text']:hover,
+.form-container textarea:hover {
+	border-bottom-color: #032b50;
+}
+
+.form-container label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-container input[type='submit'] {
+	width: 100%;
+	padding: 10px;
+	background-color: #032b50;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.form-container input[type='submit']:hover {
+	background-color: #007989;
+}

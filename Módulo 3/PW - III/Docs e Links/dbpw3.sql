@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 10-Mar-2023 às 01:34
+-- Tempo de geração: 07-Abr-2023 às 01:19
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -20,6 +20,10 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `dbpw3`
 --
+
+CREATE DATABASE dbpw3;
+
+USE dbpw3;
 
 -- --------------------------------------------------------
 
@@ -53,21 +57,21 @@ INSERT INTO `tblaboratorio` (`idLaboratorio`, `laboratorio`) VALUES
 DROP TABLE IF EXISTS `tbreclamacao`;
 CREATE TABLE IF NOT EXISTS `tbreclamacao` (
   `idRec` int(11) NOT NULL AUTO_INCREMENT,
-  `idLab` int(11) NOT NULL,
+  `idLaboratorio` int(11) DEFAULT NULL,
   `pc` int(11) NOT NULL,
   `titulo` varchar(50) NOT NULL,
   `descricao` varchar(500) NOT NULL,
-  `dtCriacao` varchar(10) NOT NULL,
+  `dtCriacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`idRec`),
-  KEY `idLab` (`idLab`)
+  KEY `idLaboratorio` (`idLaboratorio`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `tbreclamacao`
 --
 
-INSERT INTO `tbreclamacao` (`idRec`, `idLab`, `pc`, `titulo`, `descricao`, `dtCriacao`) VALUES
-(1, 1, 2, 'titu rec', 'desc', '2023-03-09');
+INSERT INTO `tbreclamacao` (`idRec`, `idLaboratorio`, `pc`, `titulo`, `descricao`, `dtCriacao`) VALUES
+(1, 1, 2, 'titu rec', 'desc', '2023-03-09 03:00:00');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
