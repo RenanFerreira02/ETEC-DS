@@ -1,0 +1,160 @@
+Controller
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Contato;
+
+class ContatoController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //$contatos = Contato::all();
+        //$contatos = Contato::where('email','=','maria@gmail.com')->get();
+        //$contatos = Contato::orderByDesc('dtcriacao')->get();
+        //$contatos = Contato::where('dtcriacao','=','2023-04-01')->get();
+        $contatos = Contato::orderBy('dtcriacao')->get();
+        
+        return view('contato',compact('contatos'));
+
+        /*
+        foreach($contatos as $c){
+            echo $c->nome;
+        }
+        */
+    }
+
+    public static function totalDeContatos(){
+
+        $contatos = new Contato();        
+        $total =  $contatos::all()->count();
+        return $total;
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $contato = new Contato();
+
+        $contato ->nome = $request->txNome;        
+        $contato ->email = $request->txEmail;
+        $contato ->assunto = $request->txAssunto;
+        $contato ->mensagem = $request->txMensagem;
+
+        $contato->save();
+
+        return redirect('/contato');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($idContato)
+    {
+        $contato = new Contato();
+        $contato->where('idContato','=',$idContato)->delete();
+        return redirect('/contato');
+    }
+}
+
+------------------------------------------------------------------
+
+View
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+
+    <form action="/contato" method="post">        
+        {{csrf_field()}}        
+        <input type="text" name="txNome" placeholder="Nome"/>
+        <input type="text" name="txEmail" placeholder="E-mail" />
+        <input type="text" name="txAssunto" placeholder="Assunto" />
+        <input type="text" name="txMensagem" placeholder="Mensagem" />
+        <input type="submit" value="Salvar" />
+    </form>
+
+    <h1>  Total de contatos cadastrados: {{App\Http\Controllers\ContatoController::totalDeContatos()}} </h1>
+
+    @foreach($contatos as $c)        
+        <p>
+            {{$c->idContato}}
+            {{$c->dtcriacao}}        
+            {{$c->nome}}
+            {{$c->email}}
+            {{$c->assunto}}
+            {{$c->mensagem}}
+            {{date('d/m/Y',strtotime($c->dtcriacao))}}
+            <a href="/contato/excluir/{{$c->idContato}}"> 
+                Excluir
+            </a>
+        </p>
+    @endforeach
+    
+</body>
+</html>
