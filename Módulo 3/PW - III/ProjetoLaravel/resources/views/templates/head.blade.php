@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @include('templates.styles')
 
-    <title>CamargoLabs</title>
+    <title>CA</title>
 
 </head>
 
@@ -31,26 +31,9 @@
 
     <footer class="bg-none m-0">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <ul
-                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-[#757575] sm:mb-0 dark:text-gray-400">
-                    <li>
-                        <a href="/" class="mr-4 hover:underline md:mr-6 ">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/mande-uma-reclamacoes" class="mr-4 hover:underline md:mr-6">Reclamações </a>
-                    </li>
-                    <li>
-                        <a href="/mande-uma-sugestao" class="mr-4 hover:underline md:mr-6 ">Contato</a>
-                    </li>
-                    <li>
-                        <a href="/quem-somos" class="hover:underline">Sobre</a>
-                    </li>
-                </ul>
-            </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm text-[#757575] sm:text-center dark:text-gray-400">&copy; 2023. All Rights
-                Reserved.</span>
+
+            <span class="block text-sm text-[#757575] sm:text-center dark:text-gray-400">&copy; 2023. All Rights Reserved.</span>
         </div>
     </footer>
 

@@ -12,23 +12,14 @@
 
     <div class="flex flex-wrap justify-center items-center content-center main-top">
 
-        <div class="px-8 pt-6 pb-8 mb-4 lg:w-1/4 md:w-4/5">
+        <div class="px-8 pt-6 pb-8 mb-4 lg:w-1/2 md:w-1/2">
             <h1 class="mt-2 block mt-1 text-4xl leading-tight font-bold text-slate-100 drop-shadow-lg mb-5">
                 Contato
             </h1>
-            <p class="block mt-1 leading-tight text-xl lg:text-[#FFF] md:text-gray-200 drop-shadow-lg">
-                O CamargoLabs tem o compromisso de garantir a melhor experiência possível para nossos usuários.
-                </br>
-                Se você tiver alguma dúvida, comentário ou sugestão, não hesite em entrar em contato conosco.
-                Basta preencher o formulário ao lado e nossa equipe de suporte técnico terá prazer em ajudá-lo.
-                </br>
-                Também estamos abertos a sugestões e ideias para melhorias em nossos serviços e na experiência do usuário. Queremos ouvir você e trabalhar juntos para fornecer um ambiente acadêmico de alta qualidade.
-                </br>
-                Agradecemos antecipadamente pelo seu feedback e aguardamos sua mensagem!
-            </p>
+            
         </div>
 
-        <div class="lg:w-1/4 md:w-1/2">
+        <div class="lg:w-3/4 md:w-3/4">
 
             <form action="/mande-uma-sugestao" method="post" class="bg-white shadow-md rounded-md px-9 py-10 mb-2 w-full m-auto">
 

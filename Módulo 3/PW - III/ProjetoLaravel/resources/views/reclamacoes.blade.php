@@ -9,28 +9,24 @@
 
     <section class="form">
 
-        <div class="flex flex-wrap justify-center items-center content-center main-top">
+        <div class="flex flex-wrap flex-col justify-center items-center content-center main-top">
 
-            <div class="px-8 pt-6 pb-8 mb-4 lg:w-1/4 md:w-4/5">
+            <div class="px-8 pt-6 pb-8 mb-4 lg:w-1/2 md:w-1/2">
                 <h1 class="mt-2 block mt-1 text-4xl leading-tight font-bold text-slate-100 drop-shadow-lg mb-5">
-                    Reclamações
+                    Reclamações & Sugestões
                 </h1>
                 <p class="block mt-1 leading-tight text-xl lg:text-[#ffffff] md:text-gray-200 drop-shadow-lg">
-                    No CamargoLabs, levamos a sério qualquer problema que possa afetar sua experiência no laboratório de
-                    informática.
+                    Para registrar uma reclamação ou sugestão utilize o formulário abaixo.
                     </br>
-                    Se você encontrou algum problema, como um computador com defeito, um teclado com problemas, ou qualquer
-                    outra coisa que esteja impedindo você de estudar, queremos saber.
+                    Lembre-se de utilizar apenas número para se referir ao PC.
                     </br>
-                    Use o formulário ao lado para nos informar sobre o problema. Nossa equipe de suporte técnico entrará em
-                    contato o mais rápido possível para resolver o problema e garantir que você possa se concentrar em seus
-                    estudos novamente.
+                    Descreva a reclamação da melhor forma que puder e apresente sugestões de melhorias para ajustes futuros.
                     </br>
-                    Agradecemos por nos ajudar a melhorar o ambiente acadêmico!
+                    Obrigado por dividir sua opinião conosco, estamos sempre trabalhando para melhor atende-los!
                 </p>
             </div>
 
-            <div class="lg:w-1/4 md:w-1/2">
+            <div class="lg:w-3/4 md:w-3/4">
                 <form action="/mande-uma-reclamacoes" method="post"
                     class="bg-white shadow-lg rounded-md px-9 py-10 mb-2 w-full m-auto">
 

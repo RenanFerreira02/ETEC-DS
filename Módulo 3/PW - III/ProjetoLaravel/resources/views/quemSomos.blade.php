@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="w-3/4 absolute blob-maker lg:top-[-22em] md:top-[-2em] drop-shadow-lg">
+<div class="w-4/5 absolute blob-maker lg:top-[-22em] md:top-[-2em] drop-shadow-lg">
     <img src="assets/img/blob-maker.svg" />
 </div>
 
