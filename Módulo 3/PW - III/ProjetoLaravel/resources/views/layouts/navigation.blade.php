@@ -5,7 +5,7 @@
             <!-- Logo -->
             <div class="shrink-0 flex items-center">
                 <a href="{{ route('dashboard') }}">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white">CamargoLabsAdm</span>
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Adminstrador</span>
                 </a>
             </div>
             <div class="flex">
@@ -24,12 +24,12 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('reclamacoes')" :active="request()->routeIs('reclamacoes')">
-                        {{ __('Reclamações') }}
+                        {{ __('Reclamações&Sugestões') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
-                        {{ __('Contato&Sugestões') }}
+                        {{ __('Contato') }}
                     </x-nav-link>
                 </div>
 

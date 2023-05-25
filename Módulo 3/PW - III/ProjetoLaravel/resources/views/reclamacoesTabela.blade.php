@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <div class="intro">
-            <h1 class="text-3xl font-bold text-gray-200">Controle de Reclamações</h1>
+            <h1 class="text-3xl font-bold text-gray-200">Controle de Reclamações e Sugestões</h1>
             <p class="text-lg text-gray-300 mt-4">Bem-vindo ao painel de controle de reclamações. Aqui você pode gerenciar todas as reclamações registradas pelos alunos.</p>
           </div>
     </x-slot>

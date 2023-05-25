@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <div class="intro">
-            <h1 class="text-3xl font-bold text-gray-200">Controle de Contato&Sugestões</h1>
+            <h1 class="text-3xl font-bold text-gray-200">Controle de Contato</h1>
             <p class="text-lg text-gray-300 mt-4">Bem-vindo ao painel de controle de Contato&Sugestões. Aqui você pode gerenciar todos os contatos e sugestões que os alunos fizeram.</p>
           </div>
     </x-slot>
